@@ -14,7 +14,7 @@ useradd kadena-miner
 # OpenCL
 ubuntu-drivers autoinstall --gpgpu
 
-git clone https://github.com/edmundnoble/bigolchungus.git /home/kadena-miner/MinerBoi
+git clone https://github.com/kadena-community/bigolchungus.git /home/kadena-miner/MinerBoi
 cd /home/kadena-miner/MinerBoi
 cmake .
 make
@@ -48,7 +48,7 @@ chown -R kadena-miner /home/kadena-miner/
 reboot
 
 # after running:
-# download the miner to /home/kadena-miner/test_opencl
+# download the miner to /home/kadena-miner/bigolchungus
 # make sure /home/kadena-miner/kernels contains kernel.cl
 # `systemctl start kadena-miner@0` starts the miner on GPU 0, etc
 # `systemctl enable kadena-miner@0` makes the miner for GPU 0 start with the system, etc
